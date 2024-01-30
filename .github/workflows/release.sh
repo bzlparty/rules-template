@@ -12,7 +12,7 @@ git archive --format=tar --prefix=${PREFIX}/ ${TAG} | gzip >$RULES_ARCHIVE
 RULES_SHA=$(shasum -a 256 $RULES_ARCHIVE | awk '{print $1}')
 echo " ... done ($RULES_ARCHIVE: $RULES_SHA)"
 
-echo -n "build: Creaet Release Notes"
+echo -n "build: Create Release Notes"
 cat > release_notes.md <<EOF
 
 ## Installation
