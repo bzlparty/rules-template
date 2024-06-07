@@ -15,6 +15,5 @@ buildifier_test(
     lint_mode = "warn",
     mode = "check",
     no_sandbox = True,
-    tags = ["manual"],
-    workspace = "//:WORKSPACE",
+    workspace = "//:MODULE.bazel",
 )
